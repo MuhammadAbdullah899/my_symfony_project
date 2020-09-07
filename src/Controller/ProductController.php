@@ -55,7 +55,7 @@ class ProductController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
 
         $product = new Product();
-        $product->setName('Keyboard');
+        $product->setName('Keyboard-1');
         $product->setPrice(1999);
         $product->setDescription('Ergonomic and stylish!');
         $errors = $validator->validate($product);
@@ -82,21 +82,7 @@ class ProductController extends AbstractController
 		//$product = $productRepository->find($product->getID());
 	 //     // look for a single Product by name
 	//	$product = $productRepository->findOneBy(['name' => 'Keyboard']);
-		// // or find by name and price
-		// $product = $repository->findOneBy([
-		//     'name' => 'Keyboard',
-		//     'price' => 1999,
-		// ]);
 
-		// look for multiple Product objects matching the name, ordered by price
-		// $products = $productRepository->findBy(
-		//     ['name' => 'Keyboard'],
-		//     ['price' => 'ASC']
-		// );
-
-		// look for *all* Product objects
-//		$products = $repository->findAll();
-	 //   $minPrice = 1000;
 
 		$products = $this->getDoctrine()
     		->getRepository(Product::class)
@@ -105,7 +91,7 @@ class ProductController extends AbstractController
 
 	    if (!$products) {
 	        throw $this->createNotFoundException(
-	            'No product found for id '.$id
+	            'No product found for id '
 	        );
 	    }
 
@@ -135,7 +121,7 @@ class ProductController extends AbstractController
 	    $entityManager->flush();
 
 	    return $this->redirectToRoute('product_show', [
-	        'id' => $product->getId()
+	        'id' => $product->getId(),'minPrice'=>'10'
 	    ]);
 	}
 

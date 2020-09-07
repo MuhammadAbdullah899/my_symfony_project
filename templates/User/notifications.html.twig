@@ -1,0 +1,19 @@
+{# templates/user/notifications.html.twig #}
+<h1>Hello {{ user_first_name }}!</h1>
+<p>You have {{ notifications| length }} new notifications.</p>
+<a href="{{ path('homepage') }}">Homepage</a>
+{# the image lives at "public/images/logo.png" #}
+<img src="{{ asset('images/ss.png') }}" alt="Symfony!"/>
+
+{# the CSS file lives at "public/css/blog.css" #}
+<link href="{{ asset('css/blog.css') }}" rel="stylesheet"/>
+
+
+{{ dump(user_first_name) }}
+
+<p>Username: {{ app.user.username ?? 'Anonymous user' }}</p>
+{% if app.debug %}
+    <p>Request method: {{ app.request.method }}</p>
+    <p>Application Environment: {{ app.environment }}</p>
+    <p>Request method: {{ app.token }}</p>
+{% endif %}

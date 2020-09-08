@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97cf5a99-5ef7-45c2-82df-a91baede1ee5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MyTaskType1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/my_task/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/my_task/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Type/TaskType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_task/new.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -147,12 +171,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Form/MyType" />
+      <recent name="$PROJECT_DIR$/src/Form" />
+      <recent name="$PROJECT_DIR$/templates/my_task" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -162,21 +194,68 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599473483261</updated>
-      <workItem from="1599473485342" duration="2285000" />
+      <workItem from="1599473485342" duration="3861000" />
+      <workItem from="1599480119005" duration="19297000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="898" y="186" key="SettingsEditor" timestamp="1599477464479">
+    <state x="674" y="354" width="613" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599542434229">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
-    <state x="898" y="186" key="SettingsEditor/51.27.1869.1053@51.27.1869.1053" timestamp="1599477464479" />
-    <state x="1075" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1599478245015">
+    <state x="674" y="354" width="613" height="396" key="#com.intellij.fileTypes.FileTypeChooser/51.27.1869.1053@51.27.1869.1053" timestamp="1599542434229" />
+    <state x="760" y="262" width="441" height="581" key="#com.intellij.ide.util.MemberChooser" timestamp="1599482593080">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
-    <state x="1075" y="258" width="672" height="678" key="search.everywhere.popup/51.27.1869.1053@51.27.1869.1053" timestamp="1599478245015" />
+    <state x="760" y="262" width="441" height="581" key="#com.intellij.ide.util.MemberChooser/51.27.1869.1053@51.27.1869.1053" timestamp="1599482593080" />
+    <state x="800" y="340" width="351" height="426" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599550115409">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="800" y="340" width="351" height="426" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/51.27.1869.1053@51.27.1869.1053" timestamp="1599550115409" />
+    <state x="718" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599487854814">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="718" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/51.27.1869.1053@51.27.1869.1053" timestamp="1599487854814" />
+    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599543269290">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl/51.27.1869.1053@51.27.1869.1053" timestamp="1599543269290" />
+    <state x="1102" y="270" width="617" height="561" key="NewPhpClassDialog" timestamp="1599550449187">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="1102" y="270" width="617" height="561" key="NewPhpClassDialog/51.27.1869.1053@51.27.1869.1053" timestamp="1599550449187" />
+    <state x="898" y="103" key="SettingsEditor" timestamp="1599542335559">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="898" y="103" key="SettingsEditor/51.27.1869.1053@51.27.1869.1053" timestamp="1599542335559" />
+    <state x="1075" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1599547152396">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="1075" y="258" width="672" height="678" key="search.everywhere.popup/51.27.1869.1053@51.27.1869.1053" timestamp="1599547152396" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Form/Type/TaskType.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

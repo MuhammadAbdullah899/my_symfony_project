@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97cf5a99-5ef7-45c2-82df-a91baede1ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/MyTaskType1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/my_task/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/my_task/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Task.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Type/TaskType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/task/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_task/new.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="97cf5a99-5ef7-45c2-82df-a91baede1ee5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599473483261</updated>
       <workItem from="1599473485342" duration="3861000" />
-      <workItem from="1599480119005" duration="19297000" />
+      <workItem from="1599480119005" duration="19773000" />
     </task>
     <servers />
   </component>

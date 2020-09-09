@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-
 use App\Entity\MyTask;
 use App\Form\MyTaskType1;
 use DateTime;
@@ -11,11 +10,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-
 class MyTaskController extends AbstractController
 {
     /**
-     * @Route("/task", name="task")
+     * @Route("/task", name="task",methods={"GET"})
      */
     public function index()
     {
@@ -24,9 +22,9 @@ class MyTaskController extends AbstractController
         ]);
     }
     /**
-     * @Route("/tasks",name="list_task")
+     * @Route("/tasks",name="list_task",methods={"GET"})
      */
-    public function list( )
+    public function list()
     {
         $entityManager = $this->getDoctrine()->getManager();
         $myTasks = $entityManager->getRepository(MyTask::class)->findAll();
@@ -41,12 +39,12 @@ class MyTaskController extends AbstractController
     }
 
     /**
-     * @Route("/tasks/update/{id}")
+     * @Route("/tasks/update/{id}",methods={"GET","POST"})
      * @param int $id
      * @param Request $request
      * @return Response
      */
-    public function update(int $id,Request $request): Response
+    public function update(int $id, Request $request): Response
     {
         $entityManager = $this->getDoctrine()->getManager();
         $myTask = $entityManager->getRepository(MyTask::class)->find($id);
@@ -62,8 +60,6 @@ class MyTaskController extends AbstractController
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-
-
             $myTask = $form->getData();
 
             $entityManager->persist($myTask);
@@ -77,11 +73,11 @@ class MyTaskController extends AbstractController
     }
 
     /**
-     * @Route("/tasks/delete/{id}")
+     * @Route("/tasks/delete/{id}",methods={"GET"})
      * @param int $id
      * @return Response
      */
-    public function delete(int $id ): Response
+    public function delete(int $id): Response
     {
         $entityManager = $this->getDoctrine()->getManager();
         $myTask = $entityManager->getRepository(MyTask::class)->find($id);
@@ -99,7 +95,7 @@ class MyTaskController extends AbstractController
     }
 
     /**
-     * @Route("/tasks/show/{id}")
+     * @Route("/tasks/show/{id}",methods={"GET"})
      * @param int $id
      * @return Response
      */
@@ -108,20 +104,21 @@ class MyTaskController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $myTask = $entityManager->getRepository(MyTask::class)->find($id);
 
-        if (!$myTask) {
+        if(!$myTask){
             throw $this->createNotFoundException(
                 'No task found for id '.$id
             );
         }
 
-        return new Response( $this->render('/my_task/show.html.twig',
+        return new Response($this->render(
+            '/my_task/show.html.twig',
             ['myTask'=>$myTask,
-                ])
-        );
+            ]
+        ));
     }
 
     /**
-     * @Route("/tasks/create")
+     * @Route("/tasks/create",methods={"GET","POST"})
      * @param Request $request
      * @return Response
      */
@@ -149,11 +146,10 @@ class MyTaskController extends AbstractController
              $entityManager->flush();
 
             return new Response('Saved new task with id '.$myTask->getId());
-      }
+        }
 
         return $this->render('my_task/new.html.twig', [
             'form' => $form->createView(),
         ]);
     }
-
 }

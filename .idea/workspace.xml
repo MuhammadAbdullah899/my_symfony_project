@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97cf5a99-5ef7-45c2-82df-a91baede1ee5" name="Default Changelist" comment="" />
+    <list default="true" id="97cf5a99-5ef7-45c2-82df-a91baede1ee5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/my_symfony_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_symfony_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MyTaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MyTaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +35,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -154,6 +164,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hB9BNzbYxL434YsyuOHSdgxZ6j" />
@@ -166,8 +177,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Notes/symfony-cast/Symfony 4 Fundamentals- Services, Config &amp; Environments/001-bundles-services-code/start" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -176,6 +187,12 @@
       <recent name="$PROJECT_DIR$/src/Form" />
       <recent name="$PROJECT_DIR$/templates/my_task" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -186,7 +203,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599473483261</updated>
       <workItem from="1599473485342" duration="3861000" />
-      <workItem from="1599480119005" duration="19773000" />
+      <workItem from="1599480119005" duration="25319000" />
+      <workItem from="1599630274330" duration="984000" />
     </task>
     <servers />
   </component>
@@ -203,8 +221,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="995" y="209" width="824" height="684" key="#PHP_CodeSniffer" timestamp="1599573791191">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="995" y="209" width="824" height="684" key="#PHP_CodeSniffer/51.27.1869.1053@51.27.1869.1053" timestamp="1599573791191" />
     <state x="674" y="354" width="613" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599542434229">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
@@ -221,18 +244,22 @@
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
     <state x="718" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/51.27.1869.1053@51.27.1869.1053" timestamp="1599487854814" />
-    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599543269290">
+    <state x="1262" y="349" width="523" height="267" key="ComposerInitDialogKey" timestamp="1599573041596">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
-    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl/51.27.1869.1053@51.27.1869.1053" timestamp="1599543269290" />
+    <state x="1262" y="349" width="523" height="267" key="ComposerInitDialogKey/51.27.1869.1053@51.27.1869.1053" timestamp="1599573041595" />
+    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599630341303">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="1189" y="308" width="424" height="484" key="FileChooserDialogImpl/51.27.1869.1053@51.27.1869.1053" timestamp="1599630341303" />
     <state x="1102" y="270" width="617" height="561" key="NewPhpClassDialog" timestamp="1599550449187">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
     <state x="1102" y="270" width="617" height="561" key="NewPhpClassDialog/51.27.1869.1053@51.27.1869.1053" timestamp="1599550449187" />
-    <state x="898" y="103" key="SettingsEditor" timestamp="1599542335559">
+    <state x="757" y="58" width="1102" height="730" key="SettingsEditor" timestamp="1599573895450">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
-    <state x="898" y="103" key="SettingsEditor/51.27.1869.1053@51.27.1869.1053" timestamp="1599542335559" />
+    <state x="757" y="58" width="1102" height="730" key="SettingsEditor/51.27.1869.1053@51.27.1869.1053" timestamp="1599573895450" />
     <state x="1075" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1599547152396">
       <screen x="51" y="27" width="1869" height="1053" />
     </state>
